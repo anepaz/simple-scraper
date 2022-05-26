@@ -26,10 +26,14 @@ ul li {
 }
 
 #feed {
-  margin-left: 4em;
-  margin-right: 4em;
+  height: 80%;
+  width: 80%;
+  margin-left: 3em;
+  margin-right: 3em;
   border: 2px solid darkcyan;
-  padding: 2.5em;
+  padding: 2em;
+  overflow: scroll;
+  background-color: #e5e5e5;
 }
 
 h2 {
@@ -39,19 +43,16 @@ h2 {
 }
 
 h3 {
-  margin-top: 1em;
   font-family: 'Tiro Tamil', serif;
   font-size: 2rem;
   font-weight: bold;
-}
-
-a, p {
-  font-size: 1.5rem;
-  font-weight: none;
-  text-decoration: none;
+  padding-top: 1em;
 }
 
 a {
+  font-size: 1.5rem;
+  font-weight: none;
+  text-decoration: none;
   padding: 1em;
   font-weight: bold;
   background: linear-gradient(0deg, darkcyan, darkcyan) no-repeat right bottom / 0 var(--bg-h);
@@ -59,9 +60,49 @@ a {
   --bg-h: 100%;
 }
 
+p {
+  font-size: 1em;
+  padding-bottom: 2em;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+
 a:where(:hover, :focus-visible) {
   background-size: 100% var(--bg-h);
   background-position-x: left;
   color: white;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  
+  #container {
+    display: block;
+    height: 100%;
+    padding-bottom: 1em;
+  }
+
+  h2 {
+    padding-top: 1.5em;
+  }
+
+  a {
+    display: flex;
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin-right: 1.5em;
+  }
+
+  #feed {
+    height: 25em;
+    margin: 0;
+    overflow: scroll;
+    justify-content: center;
+    margin-left: 0.5em;
+  }
+
 }
