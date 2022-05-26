@@ -2,14 +2,15 @@ const PORT = 8000
 const axios = require('axios')
 const cheerio = require('cheerio')
 const express = require('express')
+const path = require('path')
 const app = express()
 const cors = require('cors')
 app.use(cors())
-
+app.use('/src',express.static('src'))
 const url = 'https://www.ufpr.br/portalufpr/'
 
 app.get('/', function (req, res) {
-  res.json('My simple webscraper')
+  res.sendFile(path.join(__dirname,'/index.html'))
 })
 
 app.get('/results', (req, res) => {
@@ -29,7 +30,7 @@ app.get('/results', (req, res) => {
       })
     })
     res.json(articles)
-  }).catch(err => console.log(err))
+  })
 
 })
 

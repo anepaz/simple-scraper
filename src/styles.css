@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightgray;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-left: 2em;
+}
+
+ul li {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  list-style: none;
+}
+
+#feed {
+  margin-left: 4em;
+  margin-right: 4em;
+  border: 2px solid darkcyan;
+  padding: 2.5em;
+}
+
+h2 {
+  font-family: 'Tiro Tamil', serif;
+  font-size: 3rem;
+  color: #137f7f;
+}
+
+h3 {
+  margin-top: 1em;
+  font-family: 'Tiro Tamil', serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+a, p {
+  font-size: 1.5rem;
+  font-weight: none;
+  text-decoration: none;
+}
+
+a {
+  padding: 1em;
+  font-weight: bold;
+  background: linear-gradient(0deg, darkcyan, darkcyan) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+}
+
+a:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+  color: white;
+  font-weight: bold;
+}
