@@ -10,6 +10,7 @@
 git clone git@github.com:anepaz/simple-scraper.git
 // on the file's directory, run the app
 npm run start
+// open on localhost:8000/
 ```
 ### Node & Dependencies
 ```
