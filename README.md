@@ -2,7 +2,7 @@
 
 ### Preview
 
-![preview scraper](https://user-images.githubusercontent.com/86319685/170590759-e7a5f2fb-bc4a-4afa-9c7d-9dec783eb689.gif)
+![preview scraper](https://user-images.githubusercontent.com/86319685/170596551-5c06521c-4b73-488b-aefe-a33cf333e5c5.gif)
 
 ### Setup
 
