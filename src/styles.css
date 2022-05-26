@@ -59,6 +59,7 @@ a {
   background: linear-gradient(0deg, darkcyan, darkcyan) no-repeat right bottom / 0 var(--bg-h);
   transition: background-size 350ms;
   --bg-h: 100%;
+  border: 2px dotted darkcyan;
 }
 
 p {
@@ -69,7 +70,6 @@ p {
   border-bottom: 1px solid black;
   text-align: justify;
 }
-
 
 a:where(:hover, :focus-visible) {
   background-size: 100% var(--bg-h);
